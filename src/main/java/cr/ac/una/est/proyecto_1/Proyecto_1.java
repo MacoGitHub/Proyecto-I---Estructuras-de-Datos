@@ -11,7 +11,6 @@ public class Proyecto_1 {
         catch (Exception ex) {};
         
         window = new JFrame();
-        window.setContentPane(new JTabbedPane());
         
         cr.ac.una.est.proyecto_1.Presentation.Model model = new cr.ac.una.est.proyecto_1.Presentation.Model();
         cr.ac.una.est.proyecto_1.Presentation.View view = new cr.ac.una.est.proyecto_1.Presentation.View();
@@ -19,7 +18,7 @@ public class Proyecto_1 {
         
         window.getContentPane().add(view.getPanel());
         
-        window.setSize(400,450);
+        window.setSize(700,600);
         window.setResizable(true);
         window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         window.setTitle("Simon");

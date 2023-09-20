@@ -33,43 +33,50 @@ public class View extends javax.swing.JPanel implements Observer{
         Yellow = new javax.swing.JButton();
         Blue = new javax.swing.JButton();
 
-        Red.setText("Rojo");
+        Red.setIcon(new javax.swing.ImageIcon("C:\\Users\\Malcolm\\Desktop\\Universidad\\Estructuras\\Estructuras de Datos\\Proyectos\\Proyecto I\\Proyecto_1\\src\\main\\resources\\cr\\ac\\una\\est\\proyecto_1\\presentation\\images\\Red.png")); // NOI18N
+        Red.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RedActionPerformed(evt);
+            }
+        });
 
-        Green.setText("Verde");
+        Green.setIcon(new javax.swing.ImageIcon("C:\\Users\\Malcolm\\Desktop\\Universidad\\Estructuras\\Estructuras de Datos\\Proyectos\\Proyecto I\\Proyecto_1\\src\\main\\resources\\cr\\ac\\una\\est\\proyecto_1\\presentation\\images\\Green.png")); // NOI18N
 
-        Yellow.setText("Amarillo");
+        Yellow.setIcon(new javax.swing.ImageIcon("C:\\Users\\Malcolm\\Desktop\\Universidad\\Estructuras\\Estructuras de Datos\\Proyectos\\Proyecto I\\Proyecto_1\\src\\main\\resources\\cr\\ac\\una\\est\\proyecto_1\\presentation\\images\\Yellow.png")); // NOI18N
 
-        Blue.setText("Azul");
+        Blue.setIcon(new javax.swing.ImageIcon("C:\\Users\\Malcolm\\Desktop\\Universidad\\Estructuras\\Estructuras de Datos\\Proyectos\\Proyecto I\\Proyecto_1\\src\\main\\resources\\cr\\ac\\una\\est\\proyecto_1\\presentation\\images\\Blue.png")); // NOI18N
+        Blue.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BlueActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
         mainPanel.setLayout(mainPanelLayout);
         mainPanelLayout.setHorizontalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(mainPanelLayout.createSequentialGroup()
-                .addGap(101, 101, 101)
+                .addGap(0, 60, Short.MAX_VALUE)
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(mainPanelLayout.createSequentialGroup()
-                        .addComponent(Yellow)
-                        .addGap(18, 18, 18)
-                        .addComponent(Blue))
-                    .addGroup(mainPanelLayout.createSequentialGroup()
-                        .addComponent(Red)
-                        .addGap(18, 18, 18)
-                        .addComponent(Green)))
-                .addContainerGap(134, Short.MAX_VALUE))
+                    .addComponent(Red, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(Yellow, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Blue)
+                    .addComponent(Green))
+                .addGap(55, 55, 55))
         );
         mainPanelLayout.setVerticalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(mainPanelLayout.createSequentialGroup()
-                .addGap(88, 88, 88)
-                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Red)
-                    .addComponent(Green))
-                .addGap(37, 37, 37)
-                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Yellow)
-                    .addComponent(Blue))
-                .addContainerGap(129, Short.MAX_VALUE))
+                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Green)
+                    .addComponent(Red))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Blue)
+                    .addComponent(Yellow))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -83,6 +90,14 @@ public class View extends javax.swing.JPanel implements Observer{
             .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void RedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RedActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RedActionPerformed
+
+    private void BlueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BlueActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BlueActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
