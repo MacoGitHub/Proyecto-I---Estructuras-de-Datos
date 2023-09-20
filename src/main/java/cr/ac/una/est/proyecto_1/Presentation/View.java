@@ -1,11 +1,28 @@
-package cr.ac.una.est.mvc;
+package cr.ac.una.est.proyecto_1.Presentation;
 
-public class View extends javax.swing.JPanel {
+import java.util.Observable;
+import java.util.Observer;
+import javax.swing.JButton;
+import javax.swing.JPanel;
+
+public class View extends javax.swing.JPanel implements Observer{
     public View() {
         initComponents();
     }
+//------------------------------------------------------------------------------
+    Model _model;
+    Controller _controller;
+//------------------------------------------------------------------------------
+    public void setModel(Model model) { this._model = model; }
+    public void setController(Controller controller){ this._controller = controller; }
+    public JPanel getPanel(){return mainPanel;}
+//------------------------------------------------------------------------------
+    @Override
+    public void update(Observable updatedModel, Object properties){
+        
+    }
     
-    
+//------------------------------------------------------------------------------
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -17,11 +34,6 @@ public class View extends javax.swing.JPanel {
         Blue = new javax.swing.JButton();
 
         Red.setText("Rojo");
-        Red.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                RedActionPerformed(evt);
-            }
-        });
 
         Green.setText("Verde");
 
@@ -34,7 +46,7 @@ public class View extends javax.swing.JPanel {
         mainPanelLayout.setHorizontalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(mainPanelLayout.createSequentialGroup()
-                .addGap(113, 113, 113)
+                .addGap(101, 101, 101)
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(mainPanelLayout.createSequentialGroup()
                         .addComponent(Yellow)
@@ -44,20 +56,20 @@ public class View extends javax.swing.JPanel {
                         .addComponent(Red)
                         .addGap(18, 18, 18)
                         .addComponent(Green)))
-                .addContainerGap(122, Short.MAX_VALUE))
+                .addContainerGap(134, Short.MAX_VALUE))
         );
         mainPanelLayout.setVerticalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(mainPanelLayout.createSequentialGroup()
-                .addGap(103, 103, 103)
+                .addGap(88, 88, 88)
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Red)
                     .addComponent(Green))
-                .addGap(18, 18, 18)
+                .addGap(37, 37, 37)
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Yellow)
                     .addComponent(Blue))
-                .addContainerGap(133, Short.MAX_VALUE))
+                .addContainerGap(129, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -71,10 +83,6 @@ public class View extends javax.swing.JPanel {
             .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
-
-    private void RedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RedActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_RedActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

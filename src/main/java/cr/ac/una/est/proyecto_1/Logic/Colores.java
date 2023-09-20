@@ -1,4 +1,5 @@
-package cr.ac.una.est.proyecto_1;
+package cr.ac.una.est.proyecto_1.Logic;
+
 import java.util.Random;
 
 public class Colores {

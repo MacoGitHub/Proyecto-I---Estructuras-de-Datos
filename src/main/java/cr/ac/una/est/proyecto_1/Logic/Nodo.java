@@ -1,5 +1,4 @@
-package cr.ac.una.est.estructuras;
-import cr.ac.una.est.proyecto_1.Colores;
+package cr.ac.una.est.proyecto_1.Logic;
 
 public class Nodo {
     private Colores _ptr;

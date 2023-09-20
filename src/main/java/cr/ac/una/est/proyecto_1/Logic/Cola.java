@@ -1,8 +1,7 @@
-package cr.ac.una.est.estructuras;
-import cr.ac.una.est.proyecto_1.Colores;
+package cr.ac.una.est.proyecto_1.Logic;
 
 public class Cola {
-   private Nodo _inicio;
+    private Nodo _inicio;
     private Nodo _final;
     //--------------------------------------------------------------------------
     public Cola(){
@@ -52,4 +51,7 @@ public class Cola {
         
         return sb.toString();
     } 
+    public void createColors(){
+        
+    }
 }
