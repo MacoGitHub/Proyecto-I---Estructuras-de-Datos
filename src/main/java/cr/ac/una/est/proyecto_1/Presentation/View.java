@@ -33,6 +33,8 @@ public class View extends javax.swing.JPanel implements Observer{
         Yellow = new javax.swing.JButton();
         Blue = new javax.swing.JButton();
 
+        mainPanel.setBackground(new java.awt.Color(255, 255, 255));
+
         Red.setIcon(new javax.swing.ImageIcon("C:\\Users\\Malcolm\\Desktop\\Universidad\\Estructuras\\Estructuras de Datos\\Proyectos\\Proyecto I\\Proyecto_1\\src\\main\\resources\\cr\\ac\\una\\est\\proyecto_1\\presentation\\images\\Red.png")); // NOI18N
         Red.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
