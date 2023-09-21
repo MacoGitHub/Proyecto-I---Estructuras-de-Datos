@@ -13,7 +13,10 @@ public class Controller {
         _view.setModel(_model);
     }
 //------------------------------------------------------------------------------
-    public void compareSequences(){ // Aqui quizas se podria comparar los colores del Current y de la cola.
-        _model.setCola(Service.instance().crearColores(2));
+    public boolean compareSequences(){ // Aqui quizas se podria comparar los colores del Current y de la cola.
+        return _model.getCola().contains(_model._current);
+    }
+    public void createSequences(int cantSeq){
+        _model.setCola(Service.instance().crearColores(cantSeq));
     }
 }
