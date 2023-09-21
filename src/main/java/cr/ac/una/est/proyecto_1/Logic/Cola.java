@@ -51,7 +51,16 @@ public class Cola {
         
         return sb.toString();
     } 
-    public void createColors(){
+    /*public Cola createColors(int cant){
+        Nodo aux = _inicio;
+        Cola queue = new Cola();
         
-    }
+        for(int i=0;i<cant;i++){
+            aux.getPtr().generateColors();
+            queue.add(aux.getPtr());
+            aux = aux.getSiguiente();
+        }
+        
+        return queue;
+    }*/
 }

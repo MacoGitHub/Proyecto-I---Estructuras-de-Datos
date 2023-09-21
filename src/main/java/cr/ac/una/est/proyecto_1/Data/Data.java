@@ -1,12 +1,16 @@
 package cr.ac.una.est.proyecto_1.Data;
 
-import cr.ac.una.est.proyecto_1.Logic.Cola;
+import java.util.LinkedList;
+import java.util.Queue;
+import cr.ac.una.est.proyecto_1.Logic.Colores;
 
 public class Data {
-    private Cola _gameQueue;
+    private Queue<Colores> _gameQueue;
 //------------------------------------------------------------------------------
     public Data(){
-        _gameQueue = new Cola();
+        _gameQueue = new LinkedList();
     }
-    public Cola getQueue(){ return _gameQueue; }
+    
+    public void setCola(Queue<Colores> obj){_gameQueue = obj;}
+    public Queue getCola(){ return _gameQueue; }
 }

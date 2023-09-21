@@ -4,6 +4,7 @@ import java.util.Observable;
 import java.util.Observer;
 import javax.swing.JButton;
 import javax.swing.JPanel;
+import cr.ac.una.est.proyecto_1.Proyecto_1;
 
 public class View extends javax.swing.JPanel implements Observer{
     public View() {
@@ -19,8 +20,15 @@ public class View extends javax.swing.JPanel implements Observer{
 //------------------------------------------------------------------------------
     @Override
     public void update(Observable updatedModel, Object properties){
+        int changedProps = (int) properties;
         
+//        if(_model.getMode()==Proyecto_1.MODE_EDIT){
+//            
+//        }
+        
+        this.mainPanel.revalidate();
     }
+    
     
 //------------------------------------------------------------------------------
     @SuppressWarnings("unchecked")
@@ -32,6 +40,8 @@ public class View extends javax.swing.JPanel implements Observer{
         Green = new javax.swing.JButton();
         Yellow = new javax.swing.JButton();
         Blue = new javax.swing.JButton();
+        saveSequence = new javax.swing.JButton();
+        cantSeqText = new javax.swing.JTextField();
 
         mainPanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -53,6 +63,10 @@ public class View extends javax.swing.JPanel implements Observer{
             }
         });
 
+        saveSequence.setText("Ingresar");
+
+        cantSeqText.setBackground(new java.awt.Color(204, 204, 204));
+
         javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
         mainPanel.setLayout(mainPanelLayout);
         mainPanelLayout.setHorizontalGroup(
@@ -63,10 +77,16 @@ public class View extends javax.swing.JPanel implements Observer{
                     .addComponent(Red, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(Yellow, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Blue)
-                    .addComponent(Green))
+                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(Green, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Blue, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(55, 55, 55))
+            .addGroup(mainPanelLayout.createSequentialGroup()
+                .addGap(99, 99, 99)
+                .addComponent(saveSequence)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(cantSeqText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(72, 72, 72))
         );
         mainPanelLayout.setVerticalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -78,7 +98,14 @@ public class View extends javax.swing.JPanel implements Observer{
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Blue)
                     .addComponent(Yellow))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(mainPanelLayout.createSequentialGroup()
+                        .addGap(0, 5, Short.MAX_VALUE)
+                        .addComponent(saveSequence))
+                    .addGroup(mainPanelLayout.createSequentialGroup()
+                        .addComponent(cantSeqText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -107,6 +134,8 @@ public class View extends javax.swing.JPanel implements Observer{
     private javax.swing.JButton Green;
     private javax.swing.JButton Red;
     private javax.swing.JButton Yellow;
+    private javax.swing.JTextField cantSeqText;
     private javax.swing.JPanel mainPanel;
+    private javax.swing.JButton saveSequence;
     // End of variables declaration//GEN-END:variables
 }
