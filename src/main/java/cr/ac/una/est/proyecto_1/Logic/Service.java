@@ -29,7 +29,7 @@ public class Service {
         
         return aux;
     }
-    public void read(){
+    public void read(){ // No terminado...
         Queue<Colores> aux = _data.getCola();
         
         for(Colores color : aux){

@@ -5,7 +5,7 @@ import cr.ac.una.est.proyecto_1.Logic.Colores;
 import java.util.Queue;
 
 public class Model extends java.util.Observable {
-    Queue _queue;
+    Queue<Colores> _queue;
     Colores _current;
     int _mode = 1;
     int _changedProps;
@@ -16,8 +16,8 @@ public class Model extends java.util.Observable {
 //------------------------------------------------------------------------------
     public Model(){
     }
-    public void setCola(Queue queue) {this._queue = queue;}
-    public Queue getCola(){ return _queue; }
+    public void setCola(Queue<Colores> queue) {this._queue = queue;}
+    public Queue<Colores> getCola(){ return _queue; }
     public void setCurrent(Colores current){this._current = current;}
     public Colores getCurrent(){ return _current; }
     public void setMode(int mode){this._mode = mode;}
