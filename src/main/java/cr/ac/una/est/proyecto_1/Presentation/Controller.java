@@ -5,7 +5,7 @@ import cr.ac.una.est.proyecto_1.Logic.Service;
 public class Controller {
     View _view;
     Model _model;
-    
+//------------------------------------------------------------------------------
     public Controller(View view, Model model){
         this._model = model;
         this._view = view;
@@ -14,9 +14,15 @@ public class Controller {
     }
 //------------------------------------------------------------------------------
     public boolean compareSequences(){ // Aqui quizas se podria comparar los colores del Current y de la cola.
-        return _model.getCola().contains(_model._current);
+        boolean compare = _model.getCola().contains(_model.getCurrent());
+        if(compare) _model.commit();
+        return compare;
     }
     public void createSequences(int cantSeq){
         _model.setCola(Service.instance().crearColores(cantSeq));
+        _model.commit();
+    }
+    public void readSequences(){
+        
     }
 }

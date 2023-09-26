@@ -7,7 +7,7 @@ public class Colores {
     private String _color2;
     private String _color3;
     private String _color4;
-    //--------------------------------------------------------------------------
+//------------------------------------------------------------------------------
     public Colores(){
         _color1 = "";
         _color2 = "";

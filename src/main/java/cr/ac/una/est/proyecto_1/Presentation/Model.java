@@ -2,8 +2,6 @@ package cr.ac.una.est.proyecto_1.Presentation;
 
 import java.util.Observer;
 import cr.ac.una.est.proyecto_1.Logic.Colores;
-//import cr.ac.una.est.proyecto_1.Logic.Cola;
-import java.util.LinkedList;
 import java.util.Queue;
 
 public class Model extends java.util.Observable {
@@ -37,6 +35,4 @@ public class Model extends java.util.Observable {
         notifyObservers(_changedProps);
         _changedProps = NONE;
     }
-//------------------------------------------------------------------------------
-    
 }

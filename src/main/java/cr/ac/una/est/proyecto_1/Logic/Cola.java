@@ -51,7 +51,7 @@ public class Cola {
         
         return sb.toString();
     } 
-    /*public Cola createColors(int cant){
+    public Cola createColors(int cant){
         Nodo aux = _inicio;
         Cola queue = new Cola();
         
@@ -62,5 +62,5 @@ public class Cola {
         }
         
         return queue;
-    }*/
+    }
 }

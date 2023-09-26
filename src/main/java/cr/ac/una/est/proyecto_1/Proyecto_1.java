@@ -18,7 +18,7 @@ public class Proyecto_1 {
         
         window.getContentPane().add(view.getPanel());
         
-        window.setSize(700,600);
+        window.setSize(700,700);
         window.setResizable(true);
         window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         window.setTitle("Simon");
@@ -27,5 +27,5 @@ public class Proyecto_1 {
     public static cr.ac.una.est.proyecto_1.Presentation.Controller controller;
     public static int MODE_EDIT = 2;
     public static JFrame window;
-    //public static int cantSec;
+    public static int cantSec = 1;
 }

@@ -29,4 +29,11 @@ public class Service {
         
         return aux;
     }
+    public void read(){
+        Queue<Colores> aux = _data.getCola();
+        
+        for(Colores color : aux){
+            color.equals(aux.poll());
+        }
+    }
 }
