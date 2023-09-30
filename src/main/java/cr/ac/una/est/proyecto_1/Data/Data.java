@@ -12,5 +12,5 @@ public class Data {
     }
     
     public void setCola(Queue<Colores> obj){_gameQueue = obj;}
-    public Queue getCola(){ return _gameQueue; }
+    public Queue<Colores> getCola(){ return _gameQueue; }
 }

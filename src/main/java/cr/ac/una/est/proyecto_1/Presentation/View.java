@@ -175,8 +175,8 @@ public class View extends javax.swing.JPanel implements Observer{
     }//GEN-LAST:event_saveActionPerformed
 
     private void startActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startActionPerformed
-        _controller.createSequences(Proyecto_1.cantSec);
-        Proyecto_1.cantSec++;
+        //_controller.createSequences(Proyecto_1.cantSec);
+        //Proyecto_1.cantSec++;
     }//GEN-LAST:event_startActionPerformed
 
     private void cantSeqTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cantSeqTextActionPerformed
